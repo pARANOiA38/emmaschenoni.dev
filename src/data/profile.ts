@@ -2,7 +2,8 @@ export const profile = {
   name: "Emmanuel Schenoni",
   role: "Software Engineer · Backend",
   location: "",
-  email: "YOUR_EMAIL@example.com", // Replace before publishing.
+  // Add a public contact email here when ready. An empty value keeps it off the site.
+  email: "",
   social: {
     linkedin: "https://www.linkedin.com/in/emmaschenoni",
     github: "https://github.com/pARANOiA38",
@@ -14,12 +15,12 @@ export const profile = {
 } as const;
 
 export const experience = [
-  { company: "Mercado Libre", roles: { es: "Software Engineer", en: "Software Engineer" }, period: "2025 — Present", featured: true },
-  { company: "Mercado Libre", roles: { es: "Software Developer", en: "Software Developer" }, period: "2023 — 2025", featured: true },
-  { company: "BZA Group", roles: { es: "Full-stack Developer", en: "Full-stack Developer" }, period: "2022 — 2023", featured: false },
-  { company: "CORMORAN S.A.", roles: { es: "IT Specialist", en: "IT Specialist" }, period: "2020 — 2022", featured: false },
-  { company: "PCServiceRafaela", roles: { es: "IT Technician", en: "IT Technician" }, period: "2018 — 2022", featured: false },
-  { company: "D.S.I Computación", roles: { es: "IT Technician", en: "IT Technician" }, period: "2017 — 2017", featured: false },
+  { id: "meli-engineer", company: "Mercado Libre", roles: { es: "Software Engineer", en: "Software Engineer" }, period: "2025 — Present", featured: true },
+  { id: "meli-developer", company: "Mercado Libre", roles: { es: "Software Developer", en: "Software Developer" }, period: "2023 — 2025", featured: true },
+  { id: "bza", company: "BZA Group", roles: { es: "Full-stack Developer", en: "Full-stack Developer" }, period: "2022 — 2023", featured: false },
+  { id: "cormoran", company: "CORMORAN S.A.", roles: { es: "IT Specialist", en: "IT Specialist" }, period: "2020 — 2022", featured: false },
+  { id: "pcservice", company: "PCServiceRafaela", roles: { es: "IT Technician", en: "IT Technician" }, period: "2018 — 2022", featured: false },
+  { id: "dsi", company: "D.S.I Computación", roles: { es: "IT Technician", en: "IT Technician" }, period: "2017 — 2017", featured: false },
 ] as const;
 
 export const skills = [
