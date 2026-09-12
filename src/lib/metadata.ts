@@ -8,8 +8,10 @@ export function pageMetadata(locale: Locale): Metadata {
     : "Software Engineer enfocado en desarrollo backend, diseño de APIs y microservicios.";
   const path = isEnglish ? "/en" : "/";
   return {
+    metadataBase: new URL("https://emmaschenoni.dev"),
     title: "Emmanuel Schenoni — Software Engineer",
     description,
+    icons: { icon: "/favicon.svg" },
     alternates: { canonical: path, languages: { es: "/", en: "/en" } },
     openGraph: { type: "website", locale: isEnglish ? "en_US" : "es_AR", url: path, title: "Emmanuel Schenoni — Software Engineer", description, siteName: "Emmanuel Schenoni" },
     twitter: { card: "summary", title: "Emmanuel Schenoni — Software Engineer", description },
